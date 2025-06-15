@@ -3,7 +3,7 @@ import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/all";
 import { TiLocationArrow } from "react-icons/ti";
 import { useEffect, useRef, useState } from "react";
-import HEROIMG from "../../public/img/gallery-1.webp"
+import HeroImg from "../../public/img/hero-img.jpg"
 
 import Button from "./Button";
 import VideoPreview from "./VideoPreview";
@@ -85,12 +85,11 @@ const Hero = () => {
 
   return (
     <div className="relative h-dvh w-screen overflow-x-hidden">
-
-
       <div
         id="video-frame"
         className="relative z-10 h-dvh w-screen overflow-hidden rounded-lg bg-black"
       >
+        <img className="w-full h-full" src={HeroImg} alt="hero img" />
         <h1 className="special-font hero-heading absolute bottom-5 right-5 z-40 text-blue-75">
           G<b>A</b>MING
         </h1>
